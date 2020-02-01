@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
+.show {
+    display: block;
+}
+.hide{
+    display: none;
+}
+.hide-animation{
+    animation-name: anim;
+    animation-duration: 1.4s;
+}
+
+@keyframes anim {
+    from { opacity: 1; }
+    to { opacity: 0; }
+   }
+   @keyframes anim2 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+   }
