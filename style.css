@@ -1,17 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Zhi+Mang+Xing&display=swap');
 body{
     margin: 0;
     padding: 0;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
 }
 .conteiner{
     width: 70%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
 }
 .card{
     width: 200px;
-    background-color: aqua;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: rgb(102, 102, 102);
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 20px;
+}
+.pagination div{
     margin: 10px;
     padding: 10px;
 }
@@ -21,16 +48,7 @@ body{
 .hide{
     display: none;
 }
-.hide-animation{
-    animation-name: anim;
-    animation-duration: 1.4s;
+.active_pag{
+    font-size: 30px;
+    color: white;
 }
-
-@keyframes anim {
-    from { opacity: 1; }
-    to { opacity: 0; }
-   }
-   @keyframes anim2 {
-    from { opacity: 0; }
-    to { opacity: 1; }
-   }
