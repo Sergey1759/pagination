@@ -15,8 +15,6 @@ body{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     min-height: 500px;
 }
 .card{
@@ -52,3 +50,32 @@ body{
     font-size: 30px;
     color: white;
 }
+.hide_animation{
+    animation-name: remove;
+    animation-duration: 0.1s;
+}
+.show_animation{
+    animation-name: add;
+    animation-duration: 0.1s;
+}
+
+
+@keyframes remove {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+    opacity: 0;
+    }
+  }
+
+  @keyframes add {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+    opacity: 1;
+    }
+  }
